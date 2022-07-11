@@ -7,7 +7,7 @@
 
 See https://community.tmpdir.org/t/tinygo-on-mcus/553 for discussion
 
-Currently getting:
+Currently getting the following with tinygo v0.24.0:
 
 ```
 [cbrake@ceres tinygo_experiments]$ tg_flash_microbit_pb
