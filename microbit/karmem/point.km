@@ -1,0 +1,6 @@
+karmem point @golang.package(`main`);
+
+struct Point table {
+    Description []char;
+    Value float64;
+}

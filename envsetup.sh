@@ -6,17 +6,23 @@ tg_pb_generate() {
 }
 
 tg_flash_microbit() {
-  (cd "$TG_BASE/microbit" && tinygo flash -target microbit)
+  (cd "$TG_BASE/microbit/simple" && tinygo flash -size short -target microbit)
 }
 
 tg_flash_microbit_pb() {
-  (cd "$TG_BASE/microbit-pb" && tinygo flash -target microbit)
+  (cd "$TG_BASE/microbit/pb" && tinygo flash -size short -target microbit)
 }
 
 tg_flash_microbit_cbor() {
-  (cd "$TG_BASE/microbit-cbor" && tinygo flash -target microbit)
+  (cd "$TG_BASE/microbit/cbor" && tinygo flash -size short -target microbit)
+}
+
+tg_flash_microbit_karmem() {
+  (cd "$TG_BASE/microbit/karmem" &&
+    karmem build --golang -o "./" point.km &&
+    tinygo flash -size short -target microbit)
 }
 
 tg_flash_uno() {
-  (cd "$TG_BASE/arduino-uno" && tinygo flash -target arduino)
+  (cd "$TG_BASE/arduino-uno" && tinygo flash -size short -target arduino)
 }
