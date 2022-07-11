@@ -1,4 +1,4 @@
-# Tinygo on Microbit Protobuf test
+# Tinygo on Microbit CBOR test
 
 (using Arch Linux)
 

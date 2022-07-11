@@ -1,4 +1,6 @@
-# Tinygo on Microbit Protobuf test
+# Tinygo on Microbit Karmem test
+
+See: https://github.com/inkeliz/karmem
 
 (using Arch Linux)
 
