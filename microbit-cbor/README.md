@@ -11,8 +11,8 @@ Currently getting the following with tinygo v0.24.0:
 
 ```
 [cbrake@ceres tinygo_experiments]$ tg_flash_microbit_cbor
-# github.com/fxamacker/cbor
-../../../home/cbrake/go/pkg/mod/github.com/fxamacker/cbor@v1.5.1/decode.go:566:17: MakeMapWithSize not declared by package reflect
+# github.com/fxamacker/cbor/v2
+../../../home/cbrake/go/pkg/mod/github.com/fxamacker/cbor/v2@v2.4.0/decode.go:1231:17: MakeMapWithSize not declared by package reflect
 ```
 
 ## Reference
