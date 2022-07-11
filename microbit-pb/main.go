@@ -4,6 +4,8 @@ import (
 	"log"
 	"machine"
 	"time"
+
+	"github.com/cbrake/tinygo/pb"
 )
 
 func main() {
@@ -15,10 +17,13 @@ func main() {
 	ledRow1.Configure(machine.PinConfig{Mode: machine.PinOutput})
 	ledRow1.High()
 
+	p := pb.Point{}
+	p.Value = 500
+
 	go func() {
 		for {
 			ledCol1.Low()
-			time.Sleep(time.Millisecond * 500)
+			time.Sleep(time.Millisecond * time.Duration(p.Value))
 
 			ledCol1.High()
 			time.Sleep(time.Millisecond * 500)
